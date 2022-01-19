@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FuturisticWallpapers.com</title>
+    
+    <style>
+
+        body {
+            background-color: #121212;
+            /* background-color: rgb(58, 58, 58); */
+            box-sizing: border-box;
+        }
+
+        header
+        {   
+            font-size: 18px;
+            background-color: #121212;
+            color: white;
+        }
+        
+        .linktag {
+            text-decoration: none;
+            color: inherit;
+            padding: 10px;
+            float: right;
+            margin-top: 5px;
+        }
+
+        .linktag:hover {
+            background-color: gray;
+            color:white;
+        }
+
+        /* body footer
+        {
+            background-color: black;
+            color: white;
+        } */
+        
+        footer {
+            /* text-align: center; */
+            font-style: bold;
+        }
+
+        footer div {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .search-box {
+            
+            /* display: inline-block; */
+            text-align: center;
+            margin: auto;
+            max-width: 700px;
+            width: 70%;
+            /* padding: 8px; */
+            /* border: 4px solid #000000; */
+            
+        }
+        .search-box input {
+            /* position: relative; */
+            padding:5px;
+            width:100%;
+            overflow:hidden;
+            font-size: 15px;
+            border: 4px solid #df7575;
+            border-radius: 5px;
+            
+        }
+    
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none; /* no underline, color */
+    }
+
+    .inactiveLink {
+        pointer-events: none;
+        cursor: default;
+    }
+
+    .primarynav {
+        display: flex;
+        justify-content: center;
+
+        margin:auto;
+        /* text-align: center; */
+        max-width: 1000px;
+        width: 70%;
+        /* background-color: pink; */
+    }
+
+    .primarynav ul {
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+
+    .primarynav ul li{
+            /* text-decoration: none; */
+            /* display: block; */
+            float: left;
+            /* padding:5px; */
+            /* background-color: aliceblue;    */
+        }
+    .primarynav a:hover{
+            background-color: gray;
+            color:white;
+        }
+    .primarynav * li a{
+            display: block;
+            text-decoration: none;
+            /* text-align: center; */
+            padding:10px;
+            /* background-color: red; */
+    }
+
+    .secondarynav {
+        display: flex;
+        justify-content: center;
+
+        margin:auto;
+        max-width: 600px;
+        width: 30%;
+        /* background-color: blue; */
+    }
+
+    .secondarynav ul {
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+
+    .secondarynav ul li{
+            float: left;
+        }
+    .secondarynav a:hover{
+            background-color: gray;
+            color:white;
+        }
+    .secondarynav * li a{
+            display: block;
+            text-decoration: none;
+            /* text-align: center; */
+            padding:5px;
+            /* background-color: red; */
+    }
+
+.images {
+    /* float:left; */
+    /* float:left was ruining the center alignment */
+    border-width:1px;
+    border-style:solid;
+    border-color: #ffffff;
+    /* border-color: #121212; */
+    margin:5px;
+    /* padding:20px; */
+    width:240px;
+    height:165px;
+    text-align:center;
+    /* overflow:hidden; */
+}
+
+.clearfix {
+    clear: both;
+}
+
+.imagecontent {
+    /* display:inline-block; */
+    text-align:center;
+    width:90%;
+    margin:auto;
+    /* margin-left:auto; */
+    /* margin-right:auto; */
+    /* background-color: yellow; */
+}
+
+/* .row {
+    display:inline-block;
+    text-align:center;
+    padding:0px;
+    width:100%;
+    height:100%;
+} */
+
+.images {
+    display:inline-block;
+    position: relative;
+
+    /* overflow:hidden; */
+}
+
+/* figure {
+    display:inline-block;
+} */
+
+.images img {
+    width: 240px;
+    height: 165px;
+    /* using this property to manage images with other sizes */
+    object-fit:cover;
+}
+
+.images:hover img {
+    opacity:0.7;
+    /* border:#121212; */
+    /* border-width:10px;
+    background-color: antiquewhite; */
+}
+
+.text-overlay {
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    text-align: left;
+}
+
+.images:hover .text-overlay {
+    display: block;
+}
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="Top">
+            <a class="logo" href="index.html"><img src="https://cdn.discordapp.com/attachments/933210075974221877/933211739523268648/logo01.png" alt="FUTURISTICWALLPAPERS.COM" href="home.html"></a>
+            <!-- <a href="#" style="padding:10px;float:right;">...</a> -->
+            <a class="linktag" href="#" style="margin-right: 5px;">Sign up</a>
+            <a class="linktag" href="#">Log in</a>            
+            
+        </div>
+    </header>
+
+    <div class="search-box">
+        <form action="javascript:alert('Sorry we can\'t process your request right now..')">
+            
+            <input type="text" placeholder="Search.." name="search">
+        </form>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="primarynav">
+        <ul>
+            <li><a href="#">ABSTRACT</a></li>
+            <li><a href="#">ANIME</a></li>
+            <li><a href="#">CYBERPUNK</a></li>
+            <li><a href="#">FANTASY</a></li>
+            <li><a href="#">FUTURISTIC</a></li>
+            <li><a href="#">NATURE</a></li>
+            <li><a href="#">SCI-FI</a></li>
+            <li><a href="#">OTHERS</a></li>  
+        </ul>
+    </nav>
+
+    <!-- <hr style="color:black"> -->
+    <hr style="border:none; size:0px;"> 
+
+<div class="imagecontent">
+    <!-- <div class="row"> -->
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933247608326070292/2560x1440-px-ART-artwork-Bungie-chains-Concept-1874985-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933247608326070292/2560x1440-px-ART-artwork-Bungie-chains-Concept-1874985-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">artwork-Bungie-chains-Concept-1874985</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251574308962314/2828x2000-px-brown-city-eshi-hair-landscape-1779221-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251574308962314/2828x2000-px-brown-city-eshi-hair-landscape-1779221-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">brown-city-eshi-hair-landscape-1779221</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251574539640862/3440x1440-px-science-fiction-1293445-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251574539640862/3440x1440-px-science-fiction-1293445-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">science-fiction-1293445</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251574787092480/3840x2160-px-artwork-cyber-cyberpunk-digital-art-fan-art-1410463-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251574787092480/3840x2160-px-artwork-cyber-cyberpunk-digital-art-fan-art-1410463-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">artwork-cyber-cyberpunk-digital-art-fan-art-1410463</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251575005204510/3840x2160-px-CryEngine-futuristic-science-fiction-screenshots-Star-Citizen-683330-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251575005204510/3840x2160-px-CryEngine-futuristic-science-fiction-screenshots-Star-Citizen-683330-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">CryEngine-futuristic-science-fiction-screenshots-Star-Citizen-683330</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251575181348904/4000x1854-px-action-Battlefield-fi-fighting-futuristic-1725861-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251575181348904/4000x1854-px-action-Battlefield-fi-fighting-futuristic-1725861-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">action-Battlefield-fi-fighting-futuristic-1725861</div>
+        </a>
+    </div>
+    
+
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251575483367424/4000x2249-px-action-adventure-artwork-dangerous-Elite-1816231-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251575483367424/4000x2249-px-action-adventure-artwork-dangerous-Elite-1816231-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">action-adventure-artwork-dangerous-Elite-1816231</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251575730815026/4000x2250-px-ART-artistic-artwork-fantasy-fi-1821767-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251575730815026/4000x2250-px-ART-artistic-artwork-fantasy-fi-1821767-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">artistic-artwork-fantasy-fi-1821767</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251575953109043/6000x3887-px-ART-artistic-artwork-fantasy-fi-1818521-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251575953109043/6000x3887-px-ART-artistic-artwork-fantasy-fi-1818521-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">artistic-artwork-fantasy-fi-1818521</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251576200560660/7360x4912-px-ART-artistic-artwork-fi-fiction-1815873-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251576200560660/7360x4912-px-ART-artistic-artwork-fi-fiction-1815873-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">artistic-artwork-fi-fiction-1815873</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251576469000202/2560x1440-px-ART-artwork-fi-futuristic-sci-1807443-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251576469000202/2560x1440-px-ART-artwork-fi-futuristic-sci-1807443-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">ART-artwork-fi-futuristic-sci-1807443</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251666860474368/arseniy-chebynkin-night-city.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251666860474368/arseniy-chebynkin-night-city.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">arseniy-chebynkin-night-city</div>
+        </a>
+    </div>
+
+
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251667095322654/7680x4320-px-action-adventure-artwork-dangerous-Elite-1807817-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251667095322654/7680x4320-px-action-adventure-artwork-dangerous-Elite-1807817-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">action-adventure-artwork-dangerous-Elite-1807817</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251667334426624/020101cf7xr6eu697r6nzb.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251667334426624/020101cf7xr6eu697r6nzb.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">cyberpunk-futuristic-3437</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251667590262804/142267-cyberpunk.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251667590262804/142267-cyberpunk.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">142267-cyberpunk</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251667854516244/822947.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251667854516244/822947.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">night-sky-33438</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251668072624138/acatalept-cyberpunk-megastructure-dark-minimalism-1969907-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251668072624138/acatalept-cyberpunk-megastructure-dark-minimalism-1969907-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">acatalept-cyberpunk-megastructure-dark-minimalism-1969907</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251668273942598/anime-anime-girls-women-fantasy-girl-night-sky-1794905-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251668273942598/anime-anime-girls-women-fantasy-girl-night-sky-1794905-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">anime-anime-girls-women-fantasy-girl-night-sky-1794905</div>
+        </a>
+    </div>
+    
+
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251668508819456/anime-building-calm-city-cityscape-environment-1849297-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251668508819456/anime-building-calm-city-cityscape-environment-1849297-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">anime-building-calm-city-cityscape-environment-1849297</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251668911464488/Arasaka-Cyberpunk-2077-ultra-high-resolution-image-ultrawide-video-games-1990267-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251668911464488/Arasaka-Cyberpunk-2077-ultra-high-resolution-image-ultrawide-video-games-1990267-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">Arasaka-Cyberpunk-2077-ultra-high-resolution-image-ultrawide-video-games-1990267</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251669142171648/arseniy-chebynkin-nc-closeup.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251669142171648/arseniy-chebynkin-nc-closeup.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">arseniy-chebynkin-nc-closeup</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251754676604948/arseniy-chebynkin-tokyo-street-night.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251754676604948/arseniy-chebynkin-tokyo-street-night.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">arseniy-chebynkin-tokyo-street-night</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251754898894889/artwork-digital-art-building-futuristic-cityscape-1818291-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251754898894889/artwork-digital-art-building-futuristic-cityscape-1818291-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">artwork-digital-art-building-futuristic-cityscape-1818291</div>
+        </a>
+    </div>
+    <div class="images">            
+        <a href="https://cdn.discordapp.com/attachments/933210075974221877/933251755133767720/artwork-digital-art-futuristic-cyber-city-hologram-2011025-wallhere.com.jpg">
+            <img src="https://cdn.discordapp.com/attachments/933210075974221877/933251755133767720/artwork-digital-art-futuristic-cyber-city-hologram-2011025-wallhere.com.jpg" alt="Image Unavailable" />
+            <div class="text-overlay">artwork-digital-art-futuristic-cyber-city-hologram-2011025</div>
+        </a>
+    </div>
+</div>
+
+    <div class="clearfix"></div>
+    
+    <nav class="secondarynav">
+        <ul>
+            <li>
+                <a href ="Page2.html">Previous</a>
+            </li>
+            <li>
+                <!-- change page number using javascript -->
+                <!-- remove styling from page number -->
+                <a class="inactiveLink" style="color:rgb(206, 66, 66);font:bold;">[03]</a>
+            </li>
+            <li>
+                <a class="inactiveLink" style="" href="">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="clearfix"></div>
+
+    <footer>
+        <div style="float:left" ><a href>Contact information / Terms of Services</a></div>
+        <div style="float:right;"><a href >© Copyright Policy</a></div>
+    </footer>
+
+</body>
+</html>
+
+<script>
+
+</script>
