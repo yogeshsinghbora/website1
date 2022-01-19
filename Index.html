@@ -84,6 +84,11 @@
         text-decoration: none; /* no underline, color */
     }
 
+    .inactiveLink {
+        pointer-events: none;
+        cursor: default;
+    }
+
     .primarynav {
         display: flex;
         justify-content: center;
@@ -127,7 +132,7 @@
 
         margin:auto;
         max-width: 600px;
-        width: 30%;
+        width: 50%;
         /* background-color: blue; */
     }
 
@@ -227,6 +232,11 @@
     display: block;
 }
 
+@media screen and (max-width: 600px) {
+  .primarynav {
+    display:none;
+  }
+}
     </style>
 
 </head>
@@ -425,15 +435,15 @@
     <nav class="secondarynav">
         <ul>
             <li>
-                <a href>Previous</a>
+                <a style="" href="page.html" class="inactiveLink">Previous</a>
             </li>
             <li>
                 <!-- change page number using javascript -->
                 <!-- remove styling from page number -->
-                <a style="color:rgb(206, 66, 66);font:bold;">[01]</a>
+                <a class="inactiveLink" style="color:rgb(206, 66, 66);font:bold;">[01]</a>
             </li>
             <li>
-                <a href>Next</a>
+                <a href="Page2.html">Next</a>
             </li>
         </ul>
     </nav>
